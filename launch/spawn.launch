@@ -7,6 +7,7 @@
 	<arg name="gui" default="true"/>
 	<arg name="headless" default="false"/>
 	<arg name="debug" default="false"/>
+	<arg name="telekey" default='false'/>
 
 	<!-- We resume the logic in empty_world.launch -->
 
@@ -27,5 +28,11 @@
 
     <node name="mybot_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
           args="-urdf -param robot_vehicle -model my_robot -x $(arg x) -y $(arg y) -z $(arg z)" />
-
+    <node 
+    	name = "telekey" 
+    	pkg = "teleop_twist_keyboard" 
+    	type = "teleop_twist_keyboard.py"
+    	if = "$(arg telekey)"
+    > 
+	</node>
 </launch>
