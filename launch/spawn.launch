@@ -12,12 +12,7 @@
 	<!-- We resume the logic in empty_world.launch -->
 
 	<include file="$(find gazebo_ros)/launch/empty_world.launch">
-	<arg name="debug" value="$(arg debug)" />
-	<arg name="gui" value="$(arg gui)" />
-	<arg name="paused" value="$(arg paused)"/>
-	<arg name="use_sim_time" value="$(arg use_sim_time)"/>
-	<arg name="headless" value="$(arg headless)"/>
-	<!-- arg name="world_name" value="$(find task_1)/world/tutorial_testing.world"/ -->
+		<arg name="world_name" value="$(find robot_vehicle)urdf/world.world"/>
 	</include>
 
     <param name="robot_vehicle" command="cat '$(find robot_vehicle)/urdf/my_robot.xacro'" />

@@ -7,8 +7,9 @@ project(robot_vehicle)
 # Find catkin and any catkin packages
 find_package(
   catkin REQUIRED COMPONENTS 
-  roscpp
+  rospy
   urdf
+  std_msgs
   sensor_msgs
   geometry_msgs
 )
@@ -16,7 +17,7 @@ find_package(
 # Declare a catkin package
 catkin_package(
 	INCLUDE_DIRS
-	CATKIN_DEPENDS roscpp geometry_msgs
+	CATKIN_DEPENDS rospy geometry_msgs
 	DEPENDS
 )
 
@@ -26,7 +27,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS})
 
 install(PROGRAMS
-  scripts/keyboard_teleop
+  scripts/read_laser.py scripts/avoid_obstacle.py scripts/follow_wall.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
