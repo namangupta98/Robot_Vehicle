@@ -26,7 +26,7 @@ roslaunch robot_vehicle spawn.launch telekey:=true
 Gazebo will open in which my_robot model is there.
 
 <p align="center">
-  <img="https://github.com/namangupta98/robot_vehicle/blob/master/extras/gazebo.png">
+  <img src="https://github.com/namangupta98/robot_vehicle/blob/master/extras/gazebo.png">
   <br><b>Fig: Robot in Gazebo</b><br>
 </p>
 
