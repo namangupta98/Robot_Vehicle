@@ -1,9 +1,9 @@
 # Robot Vehicle
 
-##Overview
+## Overview
 This is a coursework project for ENPM690: Robot Learning to program a simple robot vehicle and add a programmed behavior to the robot from the scratch.
 
-##Dependencies
+## Dependencies
 1. ROS
 2. Gazebo
 3. Linux
@@ -26,7 +26,7 @@ roslaunch robot_vehicle spawn.launch telekey:=true
 Gazebo will open in which my_robot model is there.
 
 <p align="center">
-  <"https://github.com/namangupta98/robot_vehicle/blob/master/extras/gazebo.png">
+  <img = "https://github.com/namangupta98/robot_vehicle/blob/master/extras/gazebo.png">
   <br><b>Fig: Robot in Gazebo</b><br>
 </p>
 
